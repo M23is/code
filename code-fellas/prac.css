@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+
+}
+main{
+    width:100%;
+    height:calc(100% - 100px);           /*another way of defining conatiner */
+    /* background-color: rgb(19, 17, 1); */
+    position:relative;
+    display:flex;
+}
+.navbar{
+    height:100px;
+    width:100%; 
+    display:flex;
+    justify-content: space-between;
+    color:rgb(12, 9, 9);
+    align-items:center;
+    border-bottom:4px solid #dadada ;
+    padding:0 4vw;
+    
+}
+.navbar-1 {
+    display:flex; 
+   list-style-type:none;
+    gap:2rem;
+    align-items:center;
+
+}
+.navbar h2{
+    text-decoration:none;
+    color:rgb(15, 13, 13);
+    font-size:2vw;
+    font-weight: 700;   
+}
+
+.navbar-1 h4{
+ font-size: 2vw;
+
+
+}
+.navbar-1 i{
+    font-size:3vw;
+    padding:0 3vw;
+    display:none;   
+}
+.navbar-1 button{
+    margin:auto;
+    cursor:pointer;
+    outline: none;
+    transition: all .3s ease-in-out;
+    font-size:2vw;
+    background:#9eeaf0;
+}
+.left{
+    height:100%;
+    width:65%;
+      /* width:52rem; */
+    /* keep background for reference then you can remove it */
+    /* background-color: burlywood; */
+    padding:5vw 4vw;
+}
+ .left h1{
+    font-size:5vw;
+    line-height:4.4vw;
+
+}
+.h{
+    color:rgb(121, 219, 219)
+}
+.left p{
+    font-size:2vw;
+    
+    margin-top:4vw;
+    font-weight: 600;  
+    width:80%; /*so that i will take only 80% of its parent*/ 
+    
+}
+.info{
+    margin-top:3vw;
+    margin-bottom: 6vw;
+    padding:1vw 2vw;
+    border-radius:10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    background:#9eeaf0;
+    
+}
+.info:hover{
+
+    transform: scale(1.01);
+}
+
+
+.right{
+    height:100%;
+    width:45%;
+  /* width:52rem;   */
+    /* background-color: brown; */
+}
+.right img{
+    height:100%;
+    width:100%;
+
+}
+span{
+    color: rgb(36, 158, 117);
+}
+
+
+
+
+/* now  to make ypur nav bar look good on screen for mostly within mobile approach  use */
+@media (max-width:600px){
+    .navbar{
+        background-color: rgb(147, 233, 233);
+        padding: 0 5vw; 
+        /* padding upar neeche */
+        font-size: 2vw;
+        height:60px;
+     }
+
+.navbar h2{ /*logo heading*/
+    font-size:4vw;
+
+}
+.navbar-1 h4{
+    display: none;
+    
+}
+/* now we will add menu toggele so that when we reduce to phone size we will use the toggele*/
+.navbar-1 i{
+    font-size:4vw;
+    display:block;
+    font-weight: 800;   
+}
+.navbar button{
+   display:none;
+
+}
+/* working on the main part of the page */
+main{
+    height:calc(100% - 60px);
+    flex-direction: column;
+
+}
+.left{
+    width:100%;
+    height:50%;
+}
+.left h1{
+    text-align:center;
+    margin-top:30px;
+    font-size: 7vw;
+    line-height:10vw;
+    
+}
+.left p{
+    width:90%;
+    margin-top:4vw;
+    margin-bottom: 5vw;
+    font-size: 3.5vw;
+   
+}
+.info{
+    padding:1vw 1vw;
+}
+.right{
+    width:100%;
+    height:50%;
+}
+}
+
+
+
+
+
+
